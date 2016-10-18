@@ -28,7 +28,9 @@ How to use it
 - type: 
 
 	sudo ffmpeg-3.1.4 -f v4l2 -channel 0 -video_size 640x480 -i /dev/video0 -pix_fmt nv12 -r 30 -qp 15 -c:v cedrus264 indoor_test4_640x480_quality5_20secs.mp4
+
 	or
+
 	sudo ffmpeg-3.1.4 -f v4l2 -channel 0 -video_size 1024x768 -i /dev/video0 -pix_fmt nv12 -c:v cedrus264 test4_1024x768.mp4
 
 - adjust the -qp for quality [0,47]
